@@ -1,0 +1,23 @@
+
+
+.container {
+    margin-top: 0px;
+    text-align: center; 
+    color: white;
+    background-color: rgb(5, 5, 87);
+    height: 175px; 
+    margin:0px;
+   padding-top: 70px;
+}
+
+h1 {
+    margin-top: 0px; 
+}
+
+hr {
+        display: block;
+        border: 0;
+        border-bottom: 10px solid red;
+        margin-top: 55px;        
+}
+
