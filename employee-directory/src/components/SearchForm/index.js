@@ -3,9 +3,9 @@ import "./index.css";
 
 const SearchForm = () => {
     return ( 
-       <form className="search">
+       <form className="searchbox">
            <label htmlFor="Search" >
-               <input type="text" value="Search here..." />
+               <input type="search" value="Search here..." />
            </label>
 
        </form> 
