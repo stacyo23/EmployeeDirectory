@@ -4,8 +4,10 @@ import "./index.css";
 const SearchForm = () => {
     return ( 
        <form className="search">
-           <label htmlFor="Search"
-           ></label>
+           <label htmlFor="Search" >
+               <input type="text" value="Search here..." />
+           </label>
+
        </form> 
      );
 }

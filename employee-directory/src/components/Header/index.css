@@ -1,4 +1,6 @@
-
+body {
+    font-family: Josefin Sans; 
+}
 
 .container {
     margin-top: 0px;
@@ -8,6 +10,7 @@
     height: 175px; 
     margin:0px;
    padding-top: 70px;
+
 }
 
 h1 {
