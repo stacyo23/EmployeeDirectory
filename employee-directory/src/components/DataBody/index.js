@@ -12,7 +12,7 @@ function formatDate(date2) {
     const month =dateArray[1]; 
     const date =dateArray[2].split("T"); 
     const day=date[0]; 
-    const DOB= [day, month, year].join("-"); 
+    const DOB= [month, day, year].join("-"); 
     return DOB; 
 }
 
@@ -31,11 +31,11 @@ function formatDate(date2) {
                        <td data-th="Name" className="complete-name align middle">
                            {name.first} {name.last}
                        </td>
-                       <td data-th="Phone" className="phones align middle">
+                       <td data-th="Phone" className="phone align middle">
                            {phone}
                        </td>
                        <td data-th="Email" className="email align-middle">
-                           <a href={"mailto:" +email} target="_blank"> 
+                           <a href={"mailto:" + email} target="_blank"> 
                            {email}
                            </a>
                        </td>
