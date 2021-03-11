@@ -4,9 +4,9 @@ body {
 }
 
 input {
-    margin-top: 20px;
     font-family: Josefin Sans; 
     height: 30px; 
     width: auto; 
-    margin-left: 500px;
+    margin-left: 600px;
+
 }

@@ -10,7 +10,7 @@ const SearchForm = () => {
            <label htmlFor="Search" >
                <input 
                type="text" 
-               Placeholder="Search here..."
+               placeholder="Search here..."
                onChange={(e) => {
                    context.handleSearchChange(e)}} />
            </label>
