@@ -5,14 +5,8 @@ body {
 
 input {
     margin-top: 20px;
-    margin-left: 50%; 
     font-family: Josefin Sans; 
     height: 30px; 
     width: auto; 
-}
-
-button {
-    height: 30px; 
-    font-family: Josefin Sans; 
-
+    margin-left: 500px;
 }

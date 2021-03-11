@@ -67,6 +67,7 @@ const DataArea = () => {
 
  //handles search input
  const handleSearchChange = event => {
+    //  event.preventDefault(); 
     const filter = event.target.value;
     const filteredList = developerState.employees.filter(item => 
     {

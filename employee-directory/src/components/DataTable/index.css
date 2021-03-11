@@ -2,16 +2,16 @@
 	cursor: pointer;
 	}
 
-    .data .col .carrot:after {
+    /* .data .table .col .carrot:after {
         font-size: 80%;
         content: "";
         margin-right: 18px;
         }
 
-        .data .col .pointer:hover:after {
+        .data .table .col .pointer:hover:after {
             font-size: 80%;
             content: "🔻";
             margin-right: 0;
-            }
+            } */
             
     

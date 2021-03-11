@@ -4,12 +4,10 @@ import "./index.css";
 
 const Header = () => {
     return ( 
-        <div className="container">
+        <div className="container container-fluid">
         
         <h1>Employee Directory</h1>
-        <br></br>
-        <h4>Click on the carrot to filter by heading or use the search box to narrow your results.</h4>
-        <hr/>
+        <h4>Click on the name header filter or use the search box to narrow your results.</h4>
         </div>
         
         

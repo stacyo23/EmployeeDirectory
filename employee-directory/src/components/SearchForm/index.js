@@ -9,10 +9,10 @@ const SearchForm = () => {
        <form className="searchbox">
            <label htmlFor="Search" >
                <input 
-               type="search" 
-               value="Search here..."
-               onChange={e => context.handleSearchChange(e)} />
-               <button type="submit">Submit</button>
+               type="text" 
+               Placeholder="Search here..."
+               onChange={(e) => {
+                   context.handleSearchChange(e)}} />
            </label>
 
        </form> 
