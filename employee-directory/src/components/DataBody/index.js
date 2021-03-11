@@ -6,8 +6,8 @@ import "./index.css";
 const DataBody = () => {
 const context = useContext(DataAreaContext); 
 
-function formatDOB(date) {
-    const dateArray= date.split("-"); 
+function formatDate(date2) {
+    const dateArray= date2.split("-"); 
     const year = dateArray[0]; 
     const month =dateArray[1]; 
     const date =dateArray[2].split("T"); 
@@ -19,7 +19,8 @@ function formatDOB(date) {
     return ( 
         <tbody>
             {context.developerState.filteredEmployees[0] !== undefined && context.developerState.filteredEmployees[0].name !== undefined ? (context.developerState.filteredEmployees.map(({ login, name, picture, phone, email, dob}) => {
-               return (
+              
+              return (
                    <tr key={login.uuid}>
                        <td data-th="Image" className="align-middle">
                            <img src={picture.medium} 
@@ -30,7 +31,7 @@ function formatDOB(date) {
                        <td data-th="Name" className="complete-name align middle">
                            {name.first} {name.last}
                        </td>
-                       <td data-th="Phone" className="p-num align middle">
+                       <td data-th="Phone" className="phones align middle">
                            {phone}
                        </td>
                        <td data-th="Email" className="email align-middle">
@@ -39,7 +40,7 @@ function formatDOB(date) {
                            </a>
                        </td>
                         <td data-th="DOB" className="dob align-middle">
-                        formatDOB(dob.date)
+                        {formatDate(dob.date)}
                         </td>
                    </tr>
                );

@@ -1,4 +1,4 @@
-import react, {useContext, useState, useEffect} from "react"; 
+import react, { useState, useEffect} from "react"; 
 import API from "../../utils/API"; 
 import DataAreaContext from "../../utils/DataAreaContext"
 import "./index.css"; 
@@ -6,6 +6,7 @@ import Nav from "../Nav";
 import DataTable from "../DataTable"; 
 
 const DataArea = () => {
+    //set initial state
     const [developerState, setDeveloperState] = useState({
         employees: [],
         order: "ascend",
@@ -19,6 +20,7 @@ const DataArea = () => {
         ]
       });
     
+      //handles sorting/sets new state
       const handleSort = heading => {
         if (developerState.order === "descend") {
             setDeveloperState({
@@ -29,7 +31,8 @@ const DataArea = () => {
                 order:"descend"
             })
         }
-    
+
+
         const compareFx = (a, b) => {
           if (developerState.order === "ascend") {
             if (a[heading] === undefined) {
@@ -62,6 +65,7 @@ const DataArea = () => {
 
  };
 
+ //handles search input
  const handleSearchChange = event => {
     const filter = event.target.value;
     const filteredList = developerState.employees.filter(item => 
@@ -75,7 +79,7 @@ const DataArea = () => {
         filteredEmployees: filteredList });
       };
 
-
+//activates ajax call to random employee API
       useEffect(() => {
         API.getEmployees()
         .then(results => {
@@ -87,6 +91,7 @@ const DataArea = () => {
         });
       }, []);  
 
+      //checks to see the length of the filtered employees array and if there are values, the datatable is rendered
     return ( 
         <DataAreaContext.Provider
           value={{ developerState, handleSearchChange, handleSort }}
