@@ -2,11 +2,22 @@ body {
     font-family: Josefin Sans; 
 
 }
+form {
+    height: 25px; 
+}
+
+.wrapper {
+    position:  absolute;
+}
 
 input {
     font-family: Josefin Sans; 
     height: 30px; 
     width: auto; 
     margin-left: 600px;
+    position: relative;
+    display: block;
+    margin-top: -300px;
+   background-color: white;
 
 }

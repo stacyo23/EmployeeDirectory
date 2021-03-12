@@ -4,7 +4,7 @@ import "./index.css";
 
 const Nav = () => {
     return (
-        <nav className="navbar navbar-exand-lg navbar-light bg-light">
+        <nav className="navbar navbar-exand-lg navbar-light bg-white">
             <div className="search-form">
                 <SearchForm />
             </div>
